@@ -226,3 +226,10 @@
 
 (message "\n\n Pack loading completed. Your Emacs is Live...\n\n")
 (put 'downcase-region 'disabled nil)
+
+(add-to-list 'load-path "~/.emacs.d/extra/")
+(require 'sr-speedbar)
+
+(setq c-default-style '((java-mode . "java")
+                                   (awk-mode . "awk")
+                                   (other . "linux")))
